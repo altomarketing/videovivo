@@ -24,8 +24,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
 		<meta content="utf-8" http-equiv="encoding" />
-		<meta name="copyright" content="&copy; 2022 Steve Seguin" />
-		<meta name="license" content="https://github.com/steveseguin/vdo.ninja/LICENSE.md" />
+	
 		<meta name="sourcecode" content="https://github.com/steveseguin/vdo.ninja" />
 		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
 		<link id="favicon1" rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png" />
@@ -33,29 +32,9 @@
 		<link id="favicon3" rel="icon" href="./media/favicon.ico" />
 		<link id="thumbnailUrl" itemprop="thumbnailUrl" href="./media/vdoNinja_logo_full.png" />
 		<!-- Primary Meta Tags -->
-		<title>EN VIVO SERVICIOSTREAMING</title>
+		<title>EN VIVO ServicioStreaming.com</title>
+		  
 		 
-		<meta name="description" content="CLARO QEU SIII into your Studio. 100% free." />
-		<meta name="author" content="Steve Seguin" />
-		<!-- Open Graph / Facebook -->
-		<meta property="og:site_name" content="VDO.Ninja" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://vdo.ninja/" />
-		<meta property="og:title" content="VDO.Ninja" />
-		<meta property="og:description" content="Bring live video from your smartphone, computer, or friends directly into Studio. 100% free." />
-		<meta property="og:image" itemprop="image" content="https://vdo.ninja/media/vdoNinja_logo_full.png" />
-		<meta name="msapplication-TileImage" content="./media/vdoNinja_logo_full.png" />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://vdo.ninja/" />
-		<meta property="twitter:title" content="VDO.Ninja" />
-		<meta property="twitter:description" content="Bring live video from your smartphone, computer, or friends directly into OBS Studio. 100% free." />
-		<meta property="twitter:image" content="./media/vdoNinja_logo_full.png" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="theme-color" content="#ffffff" />
 		<link rel="stylesheet" href="./main.css?ver=332" />
 		<script type="text/javascript" crossorigin="anonymous" src="./thirdparty/adapter.js"></script>
 		<style id="lightbox-animations" type="text/css"></style>
@@ -2336,7 +2315,7 @@
 				<li><a onclick="changeLg('pig');toggle(document.getElementById('languages'));" style="cursor: pointer;">Pig Latin</a></li>
 			</ul>
 			<br style="line-height: 0.3;" />
-			<i class="las la-exclamation-circle"></i><a href="https://github.com/steveseguin/vdoninja/tree/master/translations" target="_blank" rel="noopener noreferrer" data-translate='add-more-here'>Add More Here!</a>
+			 
 			<br />
 		</div>
 		<div id="calendar" style="right: 20px; bottom: 30px;display:none;" class="popup-message" >
@@ -2374,7 +2353,7 @@
 			session.version = "23.4";
 			session.streamID = session.generateStreamID(); // randomly generates a streamID for this session. You can set your own programmatically if needed
 			
-			session.defaultPassword = "someEncryptionKey123"; // Change this password if self-deploying for added security/privacy
+			session.defaultPassword = "EncryptionKey123"; // Change this password if self-deploying for added security/privacy
 			// session.salt = location.hostname; // used only if password is not == False. You can change to "session.salt = location.hostname+location.pathname;" for greater deployment isolation
 			
 			session.stunServers = [{ urls: ["stun:stun.l.google.com:19302", "stun:stun.cloudflare.com:3478"]}]; // google + cloudflare stun servers. default
@@ -2475,11 +2454,11 @@
 			// session.buffer // int in milliseconds ; see the docs
 			// session.roomid // "yyyy"  -- the room name to use.  alphanumeric.
 			// session.scene // the scene name. Scene 0, 1, ... 8, or any custom scene name is supported.  STRING value. Needed to have a clean view link of a guest stream
-			// session.title // "zzzz"   ; sets the title of the browser page.
+			session.title= "Gracias a ServicioStreaming.com" // "zzzz"   ; sets the title of the browser page.
 			// session.introOnClean = true; // this will load the page with the webcam selection screen if &push or &room is in the URL; no need to use &webcam.
 			// session.lowBitrateCutoff = 300; // Set a minimum bitrate (in kbps) before the stream is hidden. Useful for IRL streams maybe
 			// session.apiserver = "wss://api.vdo.ninja:443"; // specifiy a custom websocket API URL.
-			 session.darkmode = false;  // enable or disable the dark style theme as the default
+			 session.darkmode = disable;  // enable or disable the dark style theme as the default
 			// session.defaultBackgroundImages = ["./media/bg_sample1.webp", "./media/bg_sample2.webp"]; // for &effects=5 (virtual backgrounds)
 			 session.hidehome = true; // If used, 'hide home' will make the landing page inaccessible, along with hiding a few go-home elements.
 			// session.record = false; // uncomment to block users from being able to record via vdo.ninja's built in recording function
